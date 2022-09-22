@@ -4,14 +4,15 @@ import Cards from "./Cards";
 export default class Main extends Component {
   constructor(props) {
     super(props);
-    console.log("Hola desde el constructor");
+    this.state = { mascotas: [] };
   }
 
   componentDidMount() {
-    console.log("Holis desde componentdidmount");
+    // RickAndMortyService.getAllCharacters()
+    // .then((data) => this.setState({ mascotas: data.results }))
+    // .catch((error) => console.log(error));
   }
   render() {
-    console.log("Hola desde el render");
     return (
       <main>
         <section className="py-5 text-center container">

@@ -1,25 +1,13 @@
 import React from "react";
 
-const Card = () => {
+const Card = ({ mascota }) => {
   return (
     <div className="col">
       <div className="card shadow-sm">
-        <svg
-          className="bd-placeholder-img card-img-top"
-          width="100%"
-          height="225"
-          xmlns="http://www.w3.org/2000/svg"
-          role="img"
-          aria-label="Placeholder: Thumbnail"
-          preserveAspectRatio="xMidYMid slice"
-          focusable="false"
-        >
-          <title>Placeholder</title>
-          <rect width="100%" height="100%" fill="#55595c" />
-          <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-            Thumbnail
-          </text>
-        </svg>
+        <img width="100%" src={mascota.image} alt="imagen" />
+        <title>Placeholder</title>
+        <rect width="100%" height="100%" fill="#55595c" />
+        <h4 className="mb-0 text-dark">{mascota.name}</h4>
 
         <div className="card-body">
           <p className="card-text">

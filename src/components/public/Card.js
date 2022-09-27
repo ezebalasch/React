@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Card = ({ mascota }) => {
   return (
@@ -20,7 +21,9 @@ const Card = ({ mascota }) => {
                 type="button"
                 className="btn btn-sm btn-outline-secondary"
               >
-                View
+                <Link to={`/details/${mascota.id}`} className="nav-link">
+                  Ver
+                </Link>
               </button>
               <button
                 type="button"
